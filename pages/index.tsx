@@ -3,7 +3,6 @@ import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import Link from "next/link";
-import hello from "../public/images/hello.png";
 import Layout from "../components/Layout/Layout";
 
 const Home: NextPage = () => {
@@ -24,10 +23,6 @@ const Home: NextPage = () => {
           <p className={styles.welcomeText}>
             Hello, im Nam. Welcome to my portfolio !
           </p>
-
-          <div className={styles.illustrations}>
-            <Image src={hello} width={300} height={300} alt={"Illustration"}/>
-          </div>
 
           <div className={styles.wrapper}>
             <Link href="/about" passHref>
