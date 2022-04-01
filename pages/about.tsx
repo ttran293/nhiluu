@@ -48,6 +48,7 @@ const About: NextPage = () => {
 
         <div className={styles.main}>
           <h1 className={styles.title}>Experience</h1>
+
           <div className={styles.parallel}>
             <div className={styles.illustrations}>
               <Image

@@ -21,144 +21,140 @@ import BrushIcon from "@mui/icons-material/Brush";
 
 export default function ExperienceInfo(props: any) {
   return (
-    <div>
-      <Timeline position="alternate">
-        <TimelineItem>
-          <TimelineOppositeContent
-            sx={{ m: "auto 0" }}
-            align="right"
-            variant="body2"
-            color="text.primary"
-          >
-            2017
-          </TimelineOppositeContent>
-          <TimelineSeparator>
-            <TimelineConnector />
-            <TimelineDot color="primary">
-              <BiotechIcon />
-            </TimelineDot>
-            <TimelineConnector />
-          </TimelineSeparator>
-          <TimelineContent sx={{ py: "12px", px: 2 }}>
-            <Typography variant="h6" component="span">
-              Chemistry/Biology Peer Tutor
-            </Typography>
-            <Typography>Ackerman Learning Center</Typography>
-          </TimelineContent>
-        </TimelineItem>
-        <TimelineItem>
-          <TimelineOppositeContent sx={{ py: "12px", px: 2 }}>
-            <Typography variant="h6" component="span">
-              Student Assistant
-            </Typography>
-            <Typography>Novel Solutions to Wound Healing Project</Typography>
-          </TimelineOppositeContent>
-          <TimelineSeparator>
-            <TimelineConnector />
-            <TimelineDot color="primary">
-              <MenuBookIcon />
-            </TimelineDot>
-            <TimelineConnector />
-          </TimelineSeparator>
-          <TimelineContent></TimelineContent>
-        </TimelineItem>
-        <TimelineItem>
-          <TimelineOppositeContent
-            sx={{ m: "auto 0" }}
-            align="right"
-            variant="body2"
-            color="text.primary"
-          >
-            2018
-          </TimelineOppositeContent>
-          <TimelineSeparator>
-            <TimelineConnector />
-            <TimelineDot color="primary">
-              <BrushIcon />
-            </TimelineDot>
-            <TimelineConnector />
-          </TimelineSeparator>
-          <TimelineContent sx={{ py: "12px", px: 2 }}>
-            <Typography variant="h6" component="span">
-              Graphic Design Chair
-            </Typography>
-            <Typography>Societies of Asian Scientists and Engineers</Typography>
-          </TimelineContent>
-        </TimelineItem>
-        <TimelineItem>
-          <TimelineOppositeContent sx={{ py: "12px", px: 2 }}>
-            <Typography variant="h6" component="span">
-              Student Assistant
-            </Typography>
-            <Typography>
-              McKeldin Library Services Desk/ Logistics and Periodicals
-            </Typography>
-          </TimelineOppositeContent>
-          <TimelineSeparator>
-            <TimelineConnector />
-            <TimelineDot color="primary">
-              <MenuBookIcon />
-            </TimelineDot>
-            <TimelineConnector />
-          </TimelineSeparator>
-          <TimelineContent
-            sx={{ m: "auto 0" }}
-            align="right"
-            variant="body2"
-            color="text.primary"
-          >
-            2019
-          </TimelineContent>
-        </TimelineItem>
-
-        <TimelineItem>
-          <TimelineOppositeContent
-            sx={{ m: "auto 0" }}
-            align="right"
-            variant="body2"
-            color="text.primary"
-          >
-            2021
-          </TimelineOppositeContent>
-          <TimelineSeparator>
-            <TimelineConnector />
-            <TimelineDot color="primary">
-              <BiotechIcon />
-            </TimelineDot>
-            <TimelineConnector />
-          </TimelineSeparator>
-          <TimelineContent sx={{ py: "12px", px: 2 }}>
-            <Typography variant="h6" component="span">
-              Part-time Research Assistant
-            </Typography>
-            <Typography>Wound Healing Research</Typography>
-          </TimelineContent>
-        </TimelineItem>
-
-        <TimelineItem>
-          <TimelineOppositeContent sx={{ py: "12px", px: 2 }}>
-            <Typography variant="h6" component="span">
-              Full-time Research Assistant
-            </Typography>
-            <Typography>Wound Healing Research</Typography>
-          </TimelineOppositeContent>
-          <TimelineSeparator>
-            <TimelineConnector />
-            <TimelineDot color="primary">
-              <BiotechIcon />
-            </TimelineDot>
-            <TimelineConnector />
-          </TimelineSeparator>
-          <TimelineContent
-            sx={{ m: "auto 0" }}
-            align="right"
-            variant="body2"
-            color="text.primary"
-          >
-            Present
-          </TimelineContent>
-        </TimelineItem>
-      </Timeline>
-    </div>
+    <Timeline className={styles.timeline}>
+      <TimelineItem>
+        <TimelineOppositeContent
+          sx={{ m: "auto 0" }}
+          align="right"
+          variant="body2"
+          color="text.primary"
+        >
+          2017
+        </TimelineOppositeContent>
+        <TimelineSeparator>
+          <TimelineConnector />
+          <TimelineDot color="primary">
+            <MenuBookIcon />
+          </TimelineDot>
+          <TimelineConnector />
+        </TimelineSeparator>
+        <TimelineContent sx={{ py: "12px", px: 2 }}>
+          <Typography variant="h6" component="span">
+            Chemistry and Biology Peer Tutor
+          </Typography>
+          <Typography>Ackerman Learning Center</Typography>
+        </TimelineContent>
+      </TimelineItem>
+      <TimelineItem>
+        <TimelineOppositeContent sx={{ py: "12px", px: 2 }}>
+          <Typography variant="h6" component="span">
+            Student Assistant
+          </Typography>
+          <Typography>Novel Solutions to Wound Healing Project</Typography>
+        </TimelineOppositeContent>
+        <TimelineSeparator>
+          <TimelineConnector />
+          <TimelineDot color="primary">
+            <MenuBookIcon />
+          </TimelineDot>
+          <TimelineConnector />
+        </TimelineSeparator>
+        <TimelineContent></TimelineContent>
+      </TimelineItem>
+      <TimelineItem>
+        <TimelineOppositeContent
+          sx={{ m: "auto 0" }}
+          align="right"
+          variant="body2"
+          color="text.primary"
+        >
+          2018
+        </TimelineOppositeContent>
+        <TimelineSeparator>
+          <TimelineConnector />
+          <TimelineDot color="primary">
+            <BrushIcon />
+          </TimelineDot>
+          <TimelineConnector />
+        </TimelineSeparator>
+        <TimelineContent sx={{ py: "12px", px: 2 }}>
+          <Typography variant="h6" component="span">
+            Graphic Design Chair
+          </Typography>
+          <Typography>Societies of Asian Scientists and Engineers</Typography>
+        </TimelineContent>
+      </TimelineItem>
+      <TimelineItem>
+        <TimelineOppositeContent sx={{ py: "12px", px: 2 }}>
+          <Typography variant="h6" component="span">
+            Student Assistant
+          </Typography>
+          <Typography>
+            McKeldin Library Services Desk/ Logistics and Periodicals
+          </Typography>
+        </TimelineOppositeContent>
+        <TimelineSeparator>
+          <TimelineConnector />
+          <TimelineDot color="primary">
+            <MenuBookIcon />
+          </TimelineDot>
+          <TimelineConnector />
+        </TimelineSeparator>
+        <TimelineContent
+          sx={{ m: "auto 0" }}
+          align="right"
+          variant="body2"
+          color="text.primary"
+        >
+          2019
+        </TimelineContent>
+      </TimelineItem>
+      <TimelineItem>
+        <TimelineOppositeContent
+          sx={{ m: "auto 0" }}
+          align="right"
+          variant="body2"
+          color="text.primary"
+        >
+          2021
+        </TimelineOppositeContent>
+        <TimelineSeparator>
+          <TimelineConnector />
+          <TimelineDot color="primary">
+            <BiotechIcon />
+          </TimelineDot>
+          <TimelineConnector />
+        </TimelineSeparator>
+        <TimelineContent sx={{ py: "12px", px: 2 }}>
+          <Typography variant="h6" component="span">
+            Part-time Research Assistant
+          </Typography>
+          <Typography>Wound Healing Research</Typography>
+        </TimelineContent>
+      </TimelineItem>
+      <TimelineItem>
+        <TimelineOppositeContent sx={{ py: "12px", px: 2 }}>
+          <Typography variant="h6" component="span">
+            Full-time Research Assistant
+          </Typography>
+          <Typography>Wound Healing Research</Typography>
+        </TimelineOppositeContent>
+        <TimelineSeparator>
+          <TimelineConnector />
+          <TimelineDot color="primary">
+            <BiotechIcon />
+          </TimelineDot>
+          <TimelineConnector />
+        </TimelineSeparator>
+        <TimelineContent
+          sx={{ m: "auto 0" }}
+          align="right"
+          variant="body2"
+          color="text.primary"
+        >
+          Present
+        </TimelineContent>
+      </TimelineItem>
+    </Timeline>
   );
 }
