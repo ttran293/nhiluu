@@ -6,6 +6,7 @@ import Image from "next/image";
 
 import Layout from "../components/Layout/Layout";
 
+import motivated2 from "../public/images/motivated2.jpg";
 const Now: NextPage = () => {
   return (
     <Layout>
@@ -25,12 +26,30 @@ const Now: NextPage = () => {
           <h1 className={styles.title}>What I am up to</h1>
           <ul className={styles.description}>
             <li>Currently in Silver Spring, MD, US</li>
+            <li>
+              Fulltime Student at UMBC B.S., Translational Life Science
+              Technology Bioinformatics Track
+            </li>
+            <li>FulltimeResearch Assistant . Wound Healing Research</li>
+            <li>Focus on learning python</li>
+            <li>
+              Next: using R and Python in applicable bioinformatics projects
+            </li>
+            <li>Having fun with heolly</li>
           </ul>
 
+          <div className={styles.illustrations}>
+            <Image
+              src={motivated2}
+              width={250}
+              height={250}
+              alt={"Illustration"}
+            />
+          </div>
           <p className={styles.description}>
-            Find me at <a href="https://github.com/ttran293">GitHub   </a>
+            Find me at <a href="https://github.com/ttran293">GitHub </a>
             <a href="https://www.linkedin.com/in/thanh-nam-tran-9bbb921b3/">
-               LinkedIn
+              LinkedIn
             </a>
           </p>
         </div>

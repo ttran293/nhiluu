@@ -9,6 +9,13 @@ import Layout from "../components/Layout/Layout";
 import Image from "next/image";
 import about from "../public/images/about.jpg";
 import icandoit from "../public/images/icandoit.jpg";
+import motivated from "../public/images/motivated.jpg";
+import win from "../public/images/win.jpg";
+import fail from "../public/images/fail.jpg";
+import exercise from "../public/images/exercise.jpg";
+import intro from "../public/images/intro.jpg";
+import hmm from "../public/images/hmm.jpg";
+import sad from "../public/images/sad.jpg";
 const About: NextPage = () => {
   return (
     <Layout>
@@ -63,90 +70,78 @@ const About: NextPage = () => {
         </div>
 
         <div className={styles.main}>
-          <h1 className={styles.title}>Journey</h1>
+          <h1 className={styles.title}>Biggest lesson</h1>
+          <p className={styles.description}>
+            Get Back Up When You Fall Down: How to Overcome Failure
+          </p>
           <div className={styles.illustrations}>
-            <Image
-              src={icandoit}
-              width={175}
-              height={175}
-              alt={"Illustration"}
-            />
+            <Image src={intro} width={175} height={175} alt={"Illustration"} />
           </div>
 
           <p className={styles.description}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
+            Growing up, I had always believe I was gifted. For myself and many
+            other people labeled as “gifted/talented” in their early years,
+            simply because we had a “reading level” higher than normal for their
+            grade. After I graduated highschool, I blabla bla. I do many job
+            2017-2019
           </p>
           <div className={styles.illustrations}>
-            <Image
-              src={icandoit}
-              width={175}
-              height={175}
-              alt={"Illustration"}
-            />
+            <Image src={hmm} width={190} height={190} alt={"Illustration"} />
           </div>
 
           <p className={styles.description}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
+            However, no matter how hard I tried, I hardly receive any
+            compliments. Oftentimes, I try too hard to seek and thrive on
+            approval. This results in a big burnout in 2020.In difficult time, I
+            fall or make a mistake, and then decide we can’t get back up
+          </p>
+          <div className={styles.illustrations}>
+            <Image src={sad} width={175} height={175} alt={"Illustration"} />
+          </div>
+          <p className={styles.description}>
+            Resisting, complaining, or even feeling sorry for ourselves about
+            the “bad” things that happen is normal and what we’re often
+            encouraged to do by people around us and our culture in general –
+            whether we do it out loud with others or just in our heads.
           </p>
           <div className={styles.illustrations}>
             <Image
-              src={icandoit}
+              src={exercise}
               width={175}
               height={175}
               alt={"Illustration"}
             />
           </div>
           <p className={styles.description}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
+            https://mike-robbins.com/when-you-fall-down-get-back-up/
           </p>
           <div className={styles.illustrations}>
             <Image
-              src={icandoit}
+              src={motivated}
               width={175}
               height={175}
               alt={"Illustration"}
             />
           </div>
           <p className={styles.description}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
+            Facing difficulties in our life can be incredibly beneficial if we
+            choose to allow our challenges to be growth opportunities. Failure
+            isnt the opposite of success, its a part of success. It teaches us
+            about resilience, courage, growth, and support. Failure is a
+            stepping stone to achieving all of our goals.
           </p>
           <div className={styles.illustrations}>
-            <Image
-              src={icandoit}
-              width={175}
-              height={175}
-              alt={"Illustration"}
-            />
+            <Image src={win} width={200} height={200} alt={"Illustration"} />
           </div>
+          <p className={styles.description}>
+            Success is not final, failure is not fatal: it is the courage to
+            continue that counts. Winston Churchill
+          </p>
         </div>
 
         <a href="#top">Back to top</a>
         <hr style={{ width: "100%" }}></hr>
-        <footer className={styles.footer}>Copyright © Nam</footer>
+        <footer className={styles.footer}>Copyright © Nhi</footer>
       </div>
     </Layout>
   );
