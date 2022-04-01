@@ -1,20 +1,116 @@
 import React, { useState } from "react";
-import projects from "../../data/projects";
-import styles from "./ProjectInfo.module.css";
+import styles from "./ExperienceInfo.module.css";
+import Timeline from "@mui/lab/Timeline";
+import TimelineItem from "@mui/lab/TimelineItem";
+import TimelineSeparator from "@mui/lab/TimelineSeparator";
+import TimelineConnector from "@mui/lab/TimelineConnector";
+import TimelineContent from "@mui/lab/TimelineContent";
+import TimelineOppositeContent from "@mui/lab/TimelineOppositeContent";
+import TimelineDot from "@mui/lab/TimelineDot";
+import FastfoodIcon from "@mui/icons-material/Fastfood";
+import LaptopMacIcon from "@mui/icons-material/LaptopMac";
+import HotelIcon from "@mui/icons-material/Hotel";
+import RepeatIcon from "@mui/icons-material/Repeat";
+import Typography from "@mui/material/Typography";
 
-export default function ProjectInfo(props: any) {
+import WorkIcon from "@mui/icons-material/Work";
+import SchoolIcon from "@mui/icons-material/School";
+import BiotechIcon from "@mui/icons-material/Biotech";
+import MenuBookIcon from "@mui/icons-material/MenuBook";
+import BrushIcon from "@mui/icons-material/Brush";
+
+export default function ExperienceInfo(props: any) {
   return (
     <div>
-      {projects.map((item) => (
-        <div key={item.id}>
-          <mark className={styles.tag}>{item.name}</mark>
-          <br />
-          <a className={styles.live} href={item.url}>Live</a> | <a className={styles.live} href={item.github}>Source code</a>
-          <p className={styles.description}>{item.description}<br></br>
-          {item.tech}
-          </p>
-        </div>
-      ))}
+      <Timeline position="alternate">
+        <TimelineItem>
+          <TimelineOppositeContent
+            sx={{ m: "auto 0" }}
+            align="right"
+            variant="body2"
+            color="text.primary"
+          >
+            2017
+          </TimelineOppositeContent>
+          <TimelineSeparator>
+            <TimelineConnector />
+            <TimelineDot color="primary">
+              <BiotechIcon />
+            </TimelineDot>
+            <TimelineConnector />
+          </TimelineSeparator>
+          <TimelineContent sx={{ py: "12px", px: 2 }}>
+            <Typography variant="h6" component="span">
+              Chemistry/Biology Peer Tutor
+            </Typography>
+            <Typography>Ackerman Learning Center</Typography>
+          </TimelineContent>
+        </TimelineItem>
+        <TimelineItem>
+          <TimelineOppositeContent sx={{ py: "12px", px: 2 }}>
+            <Typography variant="h6" component="span">
+              Student Assistant
+            </Typography>
+            <Typography>Novel Solutions to Wound Healing Project</Typography>
+          </TimelineOppositeContent>
+          <TimelineSeparator>
+            <TimelineConnector />
+            <TimelineDot color="primary">
+              <MenuBookIcon />
+            </TimelineDot>
+            <TimelineConnector />
+          </TimelineSeparator>
+          <TimelineContent></TimelineContent>
+        </TimelineItem>
+        <TimelineItem>
+          <TimelineOppositeContent
+            sx={{ m: "auto 0" }}
+            align="right"
+            variant="body2"
+            color="text.primary"
+          >
+            2018
+          </TimelineOppositeContent>
+          <TimelineSeparator>
+            <TimelineConnector />
+            <TimelineDot color="primary">
+              <BrushIcon />
+            </TimelineDot>
+            <TimelineConnector />
+          </TimelineSeparator>
+          <TimelineContent sx={{ py: "12px", px: 2 }}>
+            <Typography variant="h6" component="span">
+              Graphic Design Chair
+            </Typography>
+            <Typography>Societies of Asian Scientists and Engineers</Typography>
+          </TimelineContent>
+        </TimelineItem>
+        <TimelineItem>
+          <TimelineOppositeContent sx={{ py: "12px", px: 2 }}>
+            <Typography variant="h6" component="span">
+              Student Assistant
+            </Typography>
+            <Typography>
+              McKeldin Library Services Desk/ Logistics and Periodicals
+            </Typography>
+          </TimelineOppositeContent>
+          <TimelineSeparator>
+            <TimelineConnector />
+            <TimelineDot color="primary">
+              <MenuBookIcon />
+            </TimelineDot>
+            <TimelineConnector />
+          </TimelineSeparator>
+          <TimelineContent
+            sx={{ m: "auto 0" }}
+            align="right"
+            variant="body2"
+            color="text.primary"
+          >
+            2019
+          </TimelineContent>
+        </TimelineItem>
+      </Timeline>
     </div>
   );
 }

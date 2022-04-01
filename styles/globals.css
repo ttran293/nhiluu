@@ -6,9 +6,11 @@ body {
   max-width: 45rem;
   display: block;
   align-items: center;
-  color: #222;
-  background-color:rgb(247, 247, 247);
+  color: black;
+  background-color: white;
+  font-family: 'Roboto', sans-serif;
 }
+
 
 a {
   color: #222;
@@ -18,7 +20,19 @@ a {
   box-sizing: border-box;
 }
 
-li{
+li {
   padding-top: 10px;
   padding-bottom: 10px;
+}
+
+td {
+  border: 1px solid;
+}
+
+th {
+  border: 1px solid;
+}
+
+table {
+  border-collapse: collapse;
 }

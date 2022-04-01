@@ -4,7 +4,7 @@ import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import Link from "next/link";
 import Layout from "../components/Layout/Layout";
-
+import hi from "../public/images/hi.jpg";
 const Home: NextPage = () => {
   return (
     <Layout>
@@ -21,8 +21,12 @@ const Home: NextPage = () => {
 
         <main className={styles.main}>
           <p className={styles.welcomeText}>
-            Hello, im Nam. Welcome to my portfolio !
+            Hello, my name is Nhi. Welcome to my website !
           </p>
+
+          <div className={styles.illustrations}>
+            <Image src={hi} width={250} height={250} alt={"Illustration"} />
+          </div>
 
           <div className={styles.wrapper}>
             <Link href="/about" passHref>
