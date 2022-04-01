@@ -110,6 +110,54 @@ export default function ExperienceInfo(props: any) {
             2019
           </TimelineContent>
         </TimelineItem>
+
+        <TimelineItem>
+          <TimelineOppositeContent
+            sx={{ m: "auto 0" }}
+            align="right"
+            variant="body2"
+            color="text.primary"
+          >
+            2021
+          </TimelineOppositeContent>
+          <TimelineSeparator>
+            <TimelineConnector />
+            <TimelineDot color="primary">
+              <BiotechIcon />
+            </TimelineDot>
+            <TimelineConnector />
+          </TimelineSeparator>
+          <TimelineContent sx={{ py: "12px", px: 2 }}>
+            <Typography variant="h6" component="span">
+              Part-time Research Assistant
+            </Typography>
+            <Typography>Wound Healing Research</Typography>
+          </TimelineContent>
+        </TimelineItem>
+
+        <TimelineItem>
+          <TimelineOppositeContent sx={{ py: "12px", px: 2 }}>
+            <Typography variant="h6" component="span">
+              Full-time Research Assistant
+            </Typography>
+            <Typography>Wound Healing Research</Typography>
+          </TimelineOppositeContent>
+          <TimelineSeparator>
+            <TimelineConnector />
+            <TimelineDot color="primary">
+              <BiotechIcon />
+            </TimelineDot>
+            <TimelineConnector />
+          </TimelineSeparator>
+          <TimelineContent
+            sx={{ m: "auto 0" }}
+            align="right"
+            variant="body2"
+            color="text.primary"
+          >
+            Present
+          </TimelineContent>
+        </TimelineItem>
       </Timeline>
     </div>
   );
