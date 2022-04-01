@@ -17,6 +17,10 @@
   margin-bottom: 5rem;
 }
 
+.mainly {
+  max-width: 50rem;
+}
+
 .parallel {
   display: flex;
   justify-content: space-around;
