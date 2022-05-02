@@ -18,11 +18,11 @@ import SchoolIcon from "@mui/icons-material/School";
 import BiotechIcon from "@mui/icons-material/Biotech";
 import MenuBookIcon from "@mui/icons-material/MenuBook";
 import BrushIcon from "@mui/icons-material/Brush";
-
+const Fade = require("react-reveal/Fade")
 export default function ExperienceInfo(props: any) {
   return (
     <Timeline className={styles.timeline}>
-      <TimelineItem>
+      <Fade right><TimelineItem>
         <TimelineOppositeContent
           sx={{ m: "auto 0" }}
           align="right"
@@ -44,8 +44,9 @@ export default function ExperienceInfo(props: any) {
           </Typography>
           <Typography>Ackerman Learning Center</Typography>
         </TimelineContent>
-      </TimelineItem>
-      <TimelineItem>
+      </TimelineItem></Fade>
+      
+      <Fade left> <TimelineItem>
         <TimelineOppositeContent sx={{ py: "12px", px: 2 }}>
           <Typography variant="h6" component="span">
             Student Assistant
@@ -60,8 +61,10 @@ export default function ExperienceInfo(props: any) {
           <TimelineConnector />
         </TimelineSeparator>
         <TimelineContent></TimelineContent>
-      </TimelineItem>
-      <TimelineItem>
+      </TimelineItem></Fade>
+     
+
+      <Fade right><TimelineItem>
         <TimelineOppositeContent
           sx={{ m: "auto 0" }}
           align="right"
@@ -83,8 +86,10 @@ export default function ExperienceInfo(props: any) {
           </Typography>
           <Typography>Societies of Asian Scientists and Engineers</Typography>
         </TimelineContent>
-      </TimelineItem>
-      <TimelineItem>
+      </TimelineItem></Fade>
+      
+
+      <Fade left><TimelineItem>
         <TimelineOppositeContent sx={{ py: "12px", px: 2 }}>
           <Typography variant="h6" component="span">
             Student Assistant
@@ -108,8 +113,10 @@ export default function ExperienceInfo(props: any) {
         >
           2019
         </TimelineContent>
-      </TimelineItem>
-      <TimelineItem>
+      </TimelineItem></Fade>
+      
+
+      <Fade right><TimelineItem>
         <TimelineOppositeContent
           sx={{ m: "auto 0" }}
           align="right"
@@ -131,8 +138,10 @@ export default function ExperienceInfo(props: any) {
           </Typography>
           <Typography>Wound Healing Research</Typography>
         </TimelineContent>
-      </TimelineItem>
-      <TimelineItem>
+      </TimelineItem></Fade>
+      
+
+      <Fade left><TimelineItem>
         <TimelineOppositeContent sx={{ py: "12px", px: 2 }}>
           <Typography variant="h6" component="span">
             Full-time Research Assistant
@@ -154,7 +163,8 @@ export default function ExperienceInfo(props: any) {
         >
           Present
         </TimelineContent>
-      </TimelineItem>
+      </TimelineItem></Fade>
+      
     </Timeline>
   );
 }

@@ -15,7 +15,9 @@ body {
 a {
   color: #222;
 }
-
+a:hover{
+  color:burlywood;
+}
 * {
   box-sizing: border-box;
 }
