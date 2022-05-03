@@ -29,14 +29,18 @@ const Home: NextPage = () => {
                 <p>
                   {" "}
                   {"👉"}I&apos;m a full-time student @ UMBC and a part-time
-                  Molecular Biology Research Assistant. Learn more about me!
+                  Molecular Biology Research Assistant.{" "}
+                  <mark className={styles.tag}>Learn more about me!</mark>
                 </p>
               </div>
             </Link>
 
             <Link href="/now" passHref>
               <div className={styles.card}>
-                <p> {"👉"} Check out my current projects. </p>
+                <p>
+                  {"👉"} Check out my{" "}
+                  <mark className={styles.tag}>current projects</mark>.
+                </p>
               </div>
             </Link>
           </div>
