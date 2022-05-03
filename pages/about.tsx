@@ -4,7 +4,7 @@ import styles from "../styles/Home.module.css";
 import ExperienceInfo from "../components/ExperienceInfo/ExperienceInfo";
 import StoryToShare from "../components/StoryToShare/StoryToShare";
 import Skills from "../components/Skills/Skills";
-import Projects from "../components/Projects/Projects";
+
 import Header from "../components/Header/Header";
 import Layout from "../components/Layout/Layout";
 import Image from "next/image";
@@ -20,7 +20,7 @@ const About: NextPage = () => {
         <Header></Header>
 
         <div className={styles.main}>
-          <Fade top>
+          <Fade>
             <h1 className={styles.title}>About me</h1>
             <div className={styles.illustrations}>
               <Image
@@ -50,7 +50,7 @@ const About: NextPage = () => {
         </div>
 
         <Skills></Skills>
-        <Projects></Projects>
+        
         
         <StoryToShare></StoryToShare>
         

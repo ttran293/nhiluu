@@ -7,33 +7,39 @@ import Link from "next/link";
 import Layout from "../components/Layout/Layout";
 import HeadHelper from "../components/HeadHelper/HeadHelper";
 import motivated2 from "../public/images/motivated2.jpg";
+import Projects from "../components/Projects/Projects";
+const Fade = require("react-reveal/Fade");
 const Now: NextPage = () => {
   return (
     <Layout>
       <div className={styles.container}>
-      <HeadHelper title="Now"></HeadHelper>
+        <HeadHelper title="Now"></HeadHelper>
 
         <div className={styles.main}>
           <Header></Header>
-          <h1 className={styles.title}>What I am up to</h1>
-          <ul className={styles.description}>
-            <li>Currently in Silver Spring, MD, US</li>
-            <li>
-              Full-time Student at UMBC B.S., Translational Life Science
-              Technology Bioinformatics Track
-            </li>
-            <li>Part-time Research Assistant . Wound Healing Research</li>
-            <li>Focus on learning python and R</li>
-            <li>
-              Next: using R and Python in applicable bioinformatics projects
-            </li>
-            <li>
-              I have {" "}
-              <Link href="/jelly" passHref>
-                <a> a dog name Jelly</a>
-              </Link>
-            </li>
-          </ul>
+
+          <Fade >
+            <h1 className={styles.title}>What I am up to</h1>
+            <ul className={styles.description}>
+              <li>Currently in Silver Spring, MD, US</li>
+              <li>
+                Full-time Student at UMBC B.S., Translational Life Science
+                Technology Bioinformatics Track
+              </li>
+              <li>Part-time Research Assistant . Wound Healing Research</li>
+              <li>Focus on learning python and R</li>
+              <li>
+                Next: using R and Python in applicable bioinformatics projects
+              </li>
+              <li>
+                I have{" "}
+                <Link href="/jelly" passHref>
+                  <a> a dog name Jelly</a>
+                </Link>
+              </li>
+            </ul>
+          </Fade>
+          <Projects></Projects>
 
           <div className={styles.illustrations}>
             <Image
@@ -44,7 +50,7 @@ const Now: NextPage = () => {
             />
           </div>
           <p className={styles.description}>
-            Find me at <a href="https://github.com/nluu1">GitHub </a>
+            Find me on <a href="https://github.com/nluu1">GitHub </a>
             <a href="https://www.linkedin.com/in/nluu/">LinkedIn</a>
           </p>
         </div>

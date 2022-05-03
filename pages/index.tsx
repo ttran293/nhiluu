@@ -12,7 +12,7 @@ const Home: NextPage = () => {
   return (
     <Layout>
       <div className={styles.page}>
-      <HeadHelper title="Home"></HeadHelper>
+        <HeadHelper title="Home"></HeadHelper>
 
         <main className={styles.main}>
           <p className={styles.welcomeText}>
@@ -26,18 +26,17 @@ const Home: NextPage = () => {
           <div className={styles.wrapper}>
             <Link href="/about" passHref>
               <div className={styles.card}>
-                <p> {"👉"}I&apos;m a full-time student @ UMBC and a part-time Molecular Biology Research Assistant. {" "}
-                <mark className={styles.tag}>
-                  Learn more about me!
-                  </mark>
+                <p>
+                  {" "}
+                  {"👉"}I&apos;m a full-time student @ UMBC and a part-time
+                  Molecular Biology Research Assistant. Learn more about me!
                 </p>
               </div>
             </Link>
 
             <Link href="/now" passHref>
               <div className={styles.card}>
-              <p> {"👉"} Check out my current projects. {" "}
-                </p>
+                <p> {"👉"} Check out my current projects. </p>
               </div>
             </Link>
           </div>
